@@ -24,4 +24,4 @@ $ yarn lint
 
 ## Site Link
 
-https://pure-adachi.github.io/nps-softball-events/
+https://kore-de-kimari.github.io/nps-softball-events/
