@@ -11,7 +11,7 @@ const events = [
     month: 10,
     day: 18,
     dayOfWeek: "土",
-    range: "11:30 ~ 17:00",
+    range: "13:00 ~ 17:00",
     title: "NPS CUP 2025",
     status: "予定",
     description: "詳細はこちらをクリック",
