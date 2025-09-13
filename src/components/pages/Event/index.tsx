@@ -2,6 +2,8 @@ import { useParams, Navigate, Link } from "react-router";
 import { events } from "../../../data";
 import bkimg from "../../../img/background.png";
 import EventDetail from "../../atoms/EventDetail";
+import RuleDetail from "../../atoms/RuleDetail";
+import RequestDetail from "../../atoms/RequestDetail"
 
 const Event = () => {
   const { year } = useParams<{ year: string }>();
@@ -44,15 +46,18 @@ const Event = () => {
             {event.title}
           </h1>
           <EventDetail event={event} />
-        </div>
-        {/* 戻るボタン */}
-        <div className="text-center">
-          <Link
-            to="/"
-            className="inline-block px-6 py-2 bg-blue-100 text-blue-700 font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-200 hover:shadow-lg focus:bg-blue-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-300 active:shadow-lg transition duration-150 ease-in-out"
-          >
-            戻る
-          </Link>
+          <RuleDetail />
+          <RequestDetail />
+
+          {/* 戻るボタン */}
+          <div className="text-center">
+            <Link
+              to="/"
+              className="inline-block px-6 py-2 bg-blue-100 text-blue-700 font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-blue-200 hover:shadow-lg focus:bg-blue-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-300 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              戻る
+            </Link>
+          </div>
         </div>
       </div>
     </div>
